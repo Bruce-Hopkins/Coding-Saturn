@@ -146,8 +146,7 @@
 .contact-links a { transition: 0.3s;}
 .contact-links a:hover { transform: translateY(-4px);}
 
-#instagram-icon { background-color:black; color: white;}
-#videos-icon{ background-color: black; color: white; font-size:22px}
-#discord-icon{color: white; background-color: black;}
+#instagram-icon { background-color:rgba(42, 26, 23, 0); color: white;}
+#discord-icon{color: white; background-color: rgba(42, 26, 23, 0);}
 
 
