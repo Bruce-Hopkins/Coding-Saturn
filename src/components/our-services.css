@@ -1,0 +1,104 @@
+.Description-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin:0 auto;
+    height: 450px;
+
+    transition: 0.4s;
+}
+@media (max-width: 900px) {
+    .Right-Description-container p {
+        font-size: 80%;
+        text-align: center;
+    }
+    .Right-Description-container h1 {
+        font-size: 190%;
+        text-align: center;
+    }
+}
+.Left-Description-container{
+    order: 1;
+    flex-grow: 2;
+    height: 100%;
+    background-image: url(Images/business.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: 200px;
+    
+}
+.Right-Description-container {
+    background-color: #f9f9f9;
+    order: 2;
+    height: 100%;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+.Right-Description-container ul {
+    margin: 70px 70px auto 70px;
+    max-width: 400px;
+}
+.Right-Description-container h1 {
+    color: #374A67;
+}
+.Right-Description-container p {
+    white-space: normal;
+    color: #748398;
+    font-size: 93%;
+    text-align: start;
+}
+
+@media (max-width: 800px) {
+    .Description-container {
+        flex-direction: column;
+        height: 800px;
+    }
+    .Right-Description-container h1 {
+        font-size: 170%;
+        text-align: center;
+    }
+    .Right-Description-container p {
+        font-size: 95%;
+        text-align: center;
+    }
+    .Right-Description-container ul {
+        margin: 70px auto;
+    }
+}
+
+.Card-group {
+    margin: 50px auto 0px auto;
+    display: grid;
+    justify-content: center; 
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 0px;
+    max-width: 1200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:  	#E8E8E8;
+    border-radius: 8px;
+    height: 400px;
+    
+    transition: 0.4s;
+}
+.hide {
+    opacity: 0;
+    transform: translateY(20px)
+}
+
+
+@media (max-width:1200px) {
+    .Card-group {
+        height: 340px;
+        max-width: 900px;
+    }
+}
+@media (max-width:900px) {
+    .Card-group {
+        grid-template-columns: repeat(1, auto);
+        height:auto;
+        border-style: none;
+        justify-content: stretch;
+    }
+}

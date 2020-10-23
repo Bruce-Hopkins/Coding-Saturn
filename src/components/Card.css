@@ -1,0 +1,32 @@
+
+.Card {
+    width: 400px;
+    border-width: 1px;
+    border-color:#DCDCDC;
+    border-right-style: solid;
+}
+.Card svg, h3, p {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.Card h3 {max-width: 300px;}
+.Card p {max-width: 230px; margin: 47px auto;}
+.Card svg {
+    font-size: 35px;
+    margin: 30px auto;
+    color: #374A67;
+}
+#LastCard {border-right-style: none;}
+
+@media(max-width:1200px) {
+    .Card p {font-size: 80%}
+    .Card {
+        width: 100%;
+        border-style: solid;
+    }
+}
+@media(max-width:900px) {
+    .Card {width:100%}
+}

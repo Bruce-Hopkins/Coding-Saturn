@@ -1,0 +1,51 @@
+import React from "react"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import {FaInstagram, FaPlay, FaDiscord} from 'react-icons/fa';
+import {OurServices} from '../components/our-services'
+
+import "../components/index.css"
+const IndexPage = () => (
+
+  
+  <Layout
+  >
+    <SEO title="Home" />
+    <div className="Hero">
+
+      <div className="Main">
+        <h2>Learn programmming at</h2>
+        <h1> The Coding <span id="coding"> Saturn</span></h1>
+
+        <p>Take Youtube lession and join our Discord server to learn programming languages such as C++, C# and Python</p>
+        <a href="#Our-services"> Learn More </a>
+
+       </div>
+  
+      <div>
+
+        <OurServices/>
+        <div className="Get-Started"> 
+          <h3> What to get Started? </h3>
+          <ul className="button-group">
+            <a href="#"> Take Courses on Youtube</a>
+            <a href="#"> Join our Discord </a>
+          </ul>
+          <ul className="contact-links" id="Get started"> 
+            <a href="#"> <FaInstagram id="instagram-icon"/> </a>
+            <a href="#"> <FaDiscord id="discord-icon"/> </a>
+
+          </ul>
+
+        </div> 
+        
+      </div>
+
+
+  
+    </div>
+    
+  </Layout>
+)
+
+export default IndexPage

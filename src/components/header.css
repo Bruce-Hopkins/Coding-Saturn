@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+.Navbar {
+    display: grid;
+    position: fixed;
+    margin: -2px auto;
+    justify-items: center;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    line-height: 30px;
+    transition: 0.2s;
+    animation: HeroAnimation;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.Navbar a {margin-top: 10px;}
+/* If the navbar hasn't scrolled*/
+.NavbarNotScrolled {background-color: rgba(255, 255, 255, 0)}
+.NavbarNotScrolled a {color: white}
+.header-group a {  
+    border-radius: 0px;
+    border-width: 4px;
+    border-color: white;
+    border-bottom-style: solid;
+
+    color: white;
+}
+/*If Navbar has scrolled */
+.NavbarScrolled {background-color: rgba(255, 255, 255, 1);}
+.NavbarScrolled a {color:black;}
+.is-current-scrolled a {  
+    border-color: #374A67;
+    color: #374A67;
+}
+.Navbar-scrollspy {
+    background-color: rgba(255, 255, 255, 0);
+    list-style-type: none;
+    display: grid;
+    justify-items: center;
+    max-width: 650px;
+    margin: 0 auto;
+	grid-gap: 50px;
+	grid-template-columns: repeat(3, auto);
+}
+@media (max-width: 600px) {
+    .Navbar-scrollspy {grid-gap: 30px;}
+    .Navbar-scrollspy a { font-size: 80%;}
+}
+.Navbar-scrollspy a {
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    text-decoration: none;    
+    text-align: center;
+}
+.is-current a {
+    border-radius: 0px;
+    border-width: 4px;
+    border-color: #374A67;
+    border-bottom-style: solid;
+    color: #374A67;
+}
+
+@keyframes HeroAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
