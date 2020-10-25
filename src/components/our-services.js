@@ -28,7 +28,7 @@ export const OurServices = () => {
                 doShow(state => ({ ...state, itemOne: false }));
             }
             
-            if (div2Pos < scrollPos) {
+            if (div2Pos < scrollPos - 300) {
                 doShow(state => ({ ...state, itemTwo: true }));
             }
             else {

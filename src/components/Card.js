@@ -5,10 +5,7 @@ import {FaCodeBranch, FaBook, FaUsers} from 'react-icons/fa';
 
 
 class Card1 extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-    
+ 
     render() {
         return (
             <div className="Card">
