@@ -1,3 +1,4 @@
+/* The description container */
 .Description-container{
     display: flex;
     flex-direction: row;
@@ -7,16 +8,7 @@
 
     transition: 0.4s;
 }
-@media (max-width: 900px) {
-    .Right-Description-container p {
-        font-size: 80%;
-        text-align: center;
-    }
-    .Right-Description-container h1 {
-        font-size: 190%;
-        text-align: center;
-    }
-}
+/* Left side, containing the image */
 .Left-Description-container{
     order: 1;
     flex-grow: 2;
@@ -26,8 +18,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     flex-basis: 200px;
-    
 }
+/* Right side, containing the text */
 .Right-Description-container {
     background-color: #f9f9f9;
     order: 2;
@@ -49,24 +41,15 @@
     text-align: start;
 }
 
+/* Adjusting for the mobile */
 @media (max-width: 800px) {
-    .Description-container {
-        flex-direction: column;
-        height: 800px;
-    }
-    .Right-Description-container h1 {
-        font-size: 170%;
-        text-align: center;
-    }
-    .Right-Description-container p {
-        font-size: 95%;
-        text-align: center;
-    }
-    .Right-Description-container ul {
-        margin: 70px auto;
-    }
+    .Description-container {flex-direction: column; height: 800px;}
+    .Right-Description-container h1 {font-size: 170%; text-align: center;}
+    .Right-Description-container p {font-size: 95%; text-align: center;}
+    .Right-Description-container ul {margin: 70px auto;}
 }
 
+/* The second section containing the cards */
 .Card-group {
     margin: 50px auto 0px auto;
     display: grid;
@@ -82,17 +65,12 @@
     
     transition: 0.4s;
 }
-.hide {
-    opacity: 0;
-    transform: translateY(20px)
-}
+/* When the scroll has not reached the component yet */
+.hide {opacity: 0; transform: translateY(20px)}
 
-
+/* Adjusting for the mobile*/
 @media (max-width:1200px) {
-    .Card-group {
-        height: 340px;
-        max-width: 900px;
-    }
+    .Card-group {height: 340px; max-width: 900px;}
 }
 @media (max-width:900px) {
     .Card-group {

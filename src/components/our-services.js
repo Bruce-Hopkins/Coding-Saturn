@@ -16,11 +16,18 @@ export const OurServices = () => {
 
         const topPos = element => element.getBoundingClientRect().top;
 
+        // The current postions of the refs
         const divPos = topPos(ourRef.current);
         const div2Pos = topPos(twoRef.current);
 
         const onScroll = () => {
+            // The window scroll
             const scrollPos = window.scrollY;
+
+            /* if the components pos is less than the scroll pos
+                will change itemOne and itemTwo, which will change
+                the classes.
+            */
             if (divPos < scrollPos) {
                 doShow(state => ({ ...state, itemOne: true }));
             }
@@ -44,6 +51,8 @@ export const OurServices = () => {
     return (
         <div>
             <section id="Our-services">
+                {/* Will add the .hide class if scroll pos is not in range
+                    same for Card-Group */}
                 <div className={show.itemOne ? 'Description-container' : 'hide Description-container'} id="Learn more" ref={ourRef}> 
                     <div className="Left-Description-container"> </div>
 

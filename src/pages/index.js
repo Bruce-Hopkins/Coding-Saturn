@@ -9,10 +9,15 @@ const IndexPage = () => (
 
   //The layout and the css that comes with it for the overall website
   <Layout>
+    
+    {/* The SEO */}
     <SEO title="Home" />
-    <div className="Hero">
 
-      <div className="Main">
+    {/* The layout for the main page */}
+    <div className="Main">
+
+      {/*The image and the headers on the main page*/}
+      <div className="Hero">
         <h2>Learn programmming at</h2>
         <h1> The Coding <span id="coding"> Saturn</span></h1>
 
@@ -23,8 +28,12 @@ const IndexPage = () => (
   
       <div>
 
+        {/* The "Our Services" and the cards. In it contains the
+         Javascript and the cards components that is the enitre section */}
         <OurServices/>
-        <div className="Get-Started"> 
+
+        {/* The final component*/}
+        <div className="Main-Footer"> 
           <h3> What to get Started? </h3>
           <ul className="button-group">
             <a href=""> Take Courses on Youtube</a>
@@ -35,13 +44,8 @@ const IndexPage = () => (
             <a href=""> <FaDiscord id="discord-icon"/> </a>
 
           </ul>
-
         </div> 
-        
       </div>
-
-
-  
     </div>
     
   </Layout>

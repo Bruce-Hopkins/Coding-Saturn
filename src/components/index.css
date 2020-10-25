@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Ubuntu&display=swap');
 
-.Hero {
+/* Main section, the entire main page */
+.Main {
     padding: 1px 0 0 0;
     background-color: white;
     height: auto;
     width: 100%;
     position: relative;
 }
-.Main {
+
+/* Hero, the top with the image and headers */
+.Hero {
     padding: 1px 0 0 0;
     width: 100%;
     height: 600px;
@@ -18,32 +21,33 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    animation: HeroAnimation;
+    animation: MainAnimation;
     animation-duration: 1s;
     animation-delay: 0.1s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
-.Main h2 {
+.Hero h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 110%;
     margin: 200px auto auto 70px;}
-.Main h1 {
+.Hero h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 230%;
     margin: 10px auto auto 70px;
     max-width: 500px;}
+/* The highlighted header of the main hero */
 #coding {color: #42BFDD}
-.Main p {
+.Hero p {
     margin: 25px auto auto 70px;
     color: white;
     text-align: start;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;}
 
-.Main a {
+.Hero a {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     display: block;
@@ -60,40 +64,44 @@
     border-style: solid;
     transition: 0.3s;
     transition-timing-function: ease-out;}
-.Main a:hover {
+.Hero a:hover {
     background-color: #42BFDD;
     color: white;}
+/* Mobile resizing */
 @media (max-width: 940px) {
-    .Main h2 {font-size: 80%; margin: 150px auto auto 40px;}
-    .Main h1 {font-size: 190%; margin: 10px auto auto 40px}
-    .Main p {font-size: 70%; margin: 5px auto auto 40px}
-    .Main a { 
+    .Hero h2 {font-size: 80%; margin: 150px auto auto 40px;}
+    .Hero h1 {font-size: 190%; margin: 10px auto auto 40px}
+    .Hero p {font-size: 70%; margin: 5px auto auto 40px}
+    .Hero a { 
         width: 105px; 
         height: 30px; 
         font-size: 95%;
         line-height: 25px;}
 }
 @media (max-width: 400px) {
-    .Main p {
+    .Hero p {
         max-width: 270px;
         margin: 5px auto;
         text-align: center;}
-    .Main h2 {width: 100%; margin: 150px auto 0 auto; text-align: center;}
-    .Main h1 {width: 100%; margin: 10px auto; text-align: center;}
-    .Main h1 {margin: 30px auto; text-align: center;}
-    .Main a { margin:30px auto; line-height: 20px;}
+    .Hero h2 {width: 100%; margin: 150px auto 0 auto; text-align: center;}
+    .Hero h1 {width: 100%; margin: 10px auto; text-align: center;}
+    .Hero h1 {margin: 30px auto; text-align: center;}
+    .Hero a { margin:30px auto; line-height: 20px;}
 }
-@keyframes HeroAnimation {
+/*The loading animation for the main section*/
+@keyframes MainAnimation {
     0% { opacity: 0; transform: translateY(20px)}
     100% { opacity: 1; transform: translateY(0px)}
 }
-.Get-Started {
+/*Footer for the main section*/
+.Main-Footer {
     height: auto;
     padding-top: 70px;
     background-color: #374A67;
     margin: 0 auto;}
-.Get-Started h3 {color: white}
+.Main-Footer h3 {color: white}
 
+/* Button group on he footer */
 .button-group {
     display: grid;
     margin: 60px auto;
@@ -124,11 +132,15 @@
 .button-group a:hover {
     background-color: #FF8360;
     color: white;}
+
+/* Mobile resizing */
 @media(max-width:500px) {
     .button-group a {
         width:150px;
         font-size: 75%;}
 }
+
+/* Contact links */
 .contact-links {
     height: 100px;
     max-width: 300px;
