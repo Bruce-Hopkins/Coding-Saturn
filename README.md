@@ -21,7 +21,7 @@
 
 ## Credits
 Made by me, infinidreams\cobydesigns: 
-[Twitter](https://twitter.com/InfiniDreams1/) 
-[My Website](http://cobydesigns.budgetchamp.net/)
+* [Twitter](https://twitter.com/InfiniDreams1/) 
+* [My Website](http://cobydesigns.budgetchamp.net/)
 
 
