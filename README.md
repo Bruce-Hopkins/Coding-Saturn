@@ -4,6 +4,6 @@
 <h2> Requierements </h2>
 <p> I'm using gatsby V2. Every npm package I use is in the package.json, so just run 'npm install' and you should be good to go. </p>
 
-<h2 href="#"> Setup </h2>
+<h2 href="google.com"> Setup </h2>
 <p> The 'smoothscroll.polyfill();' in the header.js is important if you want to use the scrollspy, otherwise the website jumps to each section. </p>
 
