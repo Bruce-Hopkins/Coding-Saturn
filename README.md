@@ -20,9 +20,6 @@
 
 
 ## Credits
-Made by me, [infinidreams aka cobydesigns](http://cobydesigns.budgetchamp.net/):
-
-[Twitter](https://twitter.com/InfiniDreams1/)
-[Website](http://cobydesigns.budgetchamp.net/)
+Made by me, infinidreams\cobydesigns: [Twitter](https://twitter.com/InfiniDreams1/) [Website](http://cobydesigns.budgetchamp.net/)
 
 
