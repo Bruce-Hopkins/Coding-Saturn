@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Ogisha`,
-    description: `Start learing coding with us`,
+    description: `Start learing Python, C++ and more.`,
     author: `@Infinidreams`,
   },
   plugins: [
@@ -18,11 +18,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `The Coding Saturn`,
+        short_name: `Coding Saturn`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFFFFF`,
+        theme_color: `#42BFDD`,
         display: `minimal-ui`,
 
       },

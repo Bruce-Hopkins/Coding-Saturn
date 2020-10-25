@@ -7,9 +7,8 @@ import {OurServices} from '../components/our-services'
 import "../components/index.css"
 const IndexPage = () => (
 
-  
-  <Layout
-  >
+  //The layout and the css that comes with it for the overall website
+  <Layout>
     <SEO title="Home" />
     <div className="Hero">
 
