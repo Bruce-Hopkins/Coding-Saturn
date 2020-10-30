@@ -49,8 +49,8 @@ export const OurServices = () => {
 
 
     return (
-        <div>
-            <section id="Our-services">
+        <div id="Our-services">
+            <section>
                 {/* Will add the .hide class if scroll pos is not in range
                     same for Card-Group */}
                 <div className={show.itemOne ? 'Description-container' : 'hide Description-container'} id="Learn more" ref={ourRef}> 
@@ -66,13 +66,11 @@ export const OurServices = () => {
 
 
             </section>
-            <section id="#Learn more">
-                <div className={show.itemTwo ? 'Card-group' : 'hide Card-group'} id="Learn more" ref={twoRef}>
-                    <Card1 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" header="Learn Coding"/>
-                    <Card2 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" header="Take Our Courses"/>
-                    <Card3 thisId="LastCard" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" header="Join the Community"/>
-                </div>
-            </section>
+            <div className={show.itemTwo ? 'Card-group' : 'hide Card-group'} id="Learn more" ref={twoRef}>
+                <Card1 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" header="Learn Coding"/>
+                <Card2 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" header="Take Our Courses"/>
+                <Card3 thisId="LastCard" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" header="Join the Community"/>
+            </div> 
       </div>
 
       

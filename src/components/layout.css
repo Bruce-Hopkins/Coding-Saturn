@@ -28,6 +28,7 @@ footer {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(1, auto);
+  padding-bottom: 65px;
 }
 menu,
 nav,
